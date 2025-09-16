@@ -4,7 +4,7 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const characters = '🏴‍☠️🦜⚓️💰🗺💎💀';
+const characters = [...'🏴‍☠️🦜⚓️💰🗺💎💀'];
 const fontSize = 16;
 const columns = canvas.width / fontSize;
 
@@ -21,7 +21,7 @@ function draw() {
   ctx.font = `${fontSize}px monospace`;
 
   for (let i = 0; i < drops.length; i++) {
-    const text = characters.charAt(Math.floor(Math.random() * characters.length));
+    const text = characters[Math.floor(Math.random() * characters.length)];
     ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
     if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
