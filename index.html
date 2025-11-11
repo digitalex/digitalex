@@ -12,6 +12,19 @@
       body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
+      html::before {
+        content: " ";
+        position: fixed;
+        top: -2rem;
+        left: -2rem;
+        width: calc(100% + 4rem);
+        height: calc(100% + 4rem);
+        z-index: -1;
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'><text x='20' y='45' font-size='24'>🚀</text><text x='120' y='85' font-size='24'>💡</text><text x='70' y='145' font-size='24'>✨</text><text x='180' y='195' font-size='24'>🎉</text><text x='20' y='195' font-size='24'>🤖</text></svg>");
+        background-repeat: repeat;
+        opacity: 0.075;
+        transform: rotate(-15deg);
+      }
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V88DB92HRE"></script>
@@ -25,10 +38,10 @@
   </head>
   <body>
     <div class="px-4 py-5 my-0 my-sm-5 text-center" style="z-index: 1">
-      <h1 class="display-5 fw-bold text-body-emphasis">Hi, I'm Alex</h1>
+      <h1 class="display-5 fw-bold text-body-emphasis">Alex Mossin: Professional Nerd</h1>
       <div class="col-lg-6 mx-auto mt-5">
-        <p class="lead mb-4">I'm a software engineer with a passion for building beautiful and clever things. Currently at Google Labs, crafting the next generation of AI tools.</p>
-        <p class="lead mb-4">You can find me on <a href="https://linked.in/amossin">LinkedIn</a> and <a href="https://x.com/ObscureShoes">X</a>.</p>
+        <p class="lead mb-4">I build cool things for the internet. Right now, I'm at Google Labs, probably making sentient toasters or something.</p>
+        <p class="lead mb-4">Want to connect? Find me on <a href="https://linked.in/amossin">LinkedIn</a> and <a href="https://x.com/ObscureShoes">X</a>.</p>
       </div>
       <img class="shadow p-3 mb-5 rounded-circle img-fluid" src="https://pbs.twimg.com/profile_images/1924850105682952197/g-Wpc4eu_400x400.jpg"/>
     </div>
